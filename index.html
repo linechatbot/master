@@ -1,0 +1,1640 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)https://developers.line.biz/en/ -->
+<html lang="th"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>LINE Chatbot Developers</title>
+    <!-- browser setting-->
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <!-- themes-->
+    <meta name="theme-color" content="#6CD36C">
+    <!-- icon-->
+    <link rel="icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- og-->
+    <link rel="stylesheet" type="text/css" href="./LINE Developers_files/common.css">
+    <link rel="stylesheet" type="text/css" href="./LINE Developers_files/line-developer-components.css">
+    <link rel="stylesheet" href="./LINE Developers_files/css">
+    <link href="./LINE Developers_files/css(1)" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./LINE Developers_files/local.css">
+    <!-- OGP / General -->
+    <meta property="og:url" content="https://linechatbot.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="th_TH">
+    <meta property="og:title" content="LINE Chatbot Developers">
+    <meta property="og:description" content="The LINE Developers site is a portal site for developers. It contains documents and tools that will help you use our various developer products. Creating LINE Login and Messaging API applications and services has never been easier!">
+    <meta property="og:image" content="ogp-logo.png">
+    <!-- OGP / Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@branding_champ">
+    <meta name="twitter:title" content="LINE Chatbot Developers">
+    <meta name="twitter:image" content="ogp-logo.png">
+  </head>
+  <body class="ExTopPage ExDocuments">
+    <header>
+      <div class="GlobalHeaderWrapper"><div class="GlobalHeader">
+  <div class="GlobalHeaderInner">
+    <div class="GlobalHeaderHamburgerBtn">
+      <!--button></button-->
+    </div>
+    <a class="GlobalHeaderLogo" href="."><img class="GlobalHeaderLogoWht" src="./LINE Developers_files/logo-white.png" alt="line chatbot developers"><img class="GlobalHeaderLogoBlk" src="./LINE Developers_files/logo-black.png" alt="line chatbot developers"></a>
+    <!--nav class="GlobalHeaderNav">
+      <ul>
+        <li><a class="GlobalHeaderNavLink" href="https://developers.line.biz/en/services/" data-navlink="services" data-translate="translate_header_menu_service">Products</a></li>
+        <li><a class="GlobalHeaderNavLink" href="https://developers.line.biz/en/docs/" data-navlink="docs" data-translate="translate_header_menu_documents">Documents</a></li>
+        <li><a class="GlobalHeaderNavLink" href="https://developers.line.biz/en/news/" data-navlink="news" data-translate="translate_header_menu_news">News</a></li>
+        <li><a class="GlobalHeaderNavLink" href="https://developers.line.biz/en/faq/" data-navlink="faq" data-translate="translate_header_menu_faq">FAQ</a></li>
+        <li><a class="GlobalHeaderNavLink Link-blank" href="https://www.line-community.me/" target="_blank" data-translate="translate_header_menu_community">Community</a></li>
+        <li><a class="GlobalHeaderNavLink Link-blank" href="https://engineering.linecorp.com/en/blog" target="_blank" data-translate="translate_header_menu_blog">Blog</a></li>
+      </ul>
+    </nav-->
+    <!--div class="GlobalHeaderUtil">
+      <div class="GlobalHeaderSearchArea">
+        <div class="GlobalHeaderSearchIcon"></div>
+        <form onsubmit="javascript:return false;">
+          <input class="GlobalHeaderSearchInput" type="text" placeholder="Search" data-translate="translate_header_search_box_default_text" autofocus="">
+        </form>
+        <div class="closeIcon"></div>
+      </div-->
+      <!--div class="GlobalHeaderLoginArea js-logout">
+        <div class="LoadingIndicator"></div>
+        <div class="login-button js-logout"><a class="GlobalHeaderLoginBtn" href="https://developers.line.biz/console/" data-translate="translate_header_login_login">Log in</a>
+          <div class="loginBtnAd">   <span class="GlobalHeaderLoginBtnAdCaret"></span><span class="GlobalHeaderLoginBtnAd"> <span data-translate="translate_header_login_ad">Easy registration with your LINE account!</span></span></div>
+        </div-->
+        <div class="login-user js-logout"><img class="GlobalHeaderAvatarImg profileImg" src="https://developers.line.biz/en/" alt="Profile Avatar Image"></div>
+        <div class="user-dropdown js-logout">
+          <ul class="GlobalHeaderDropdownContent">
+            <li><a class="profileContainer" href="https://developers.line.biz/console/profile/"><img class="profileImg" src="https://developers.line.biz/en/" alt="Profile Avatar Image">
+                <div class="profileData">
+                  <p class="username"></p>
+                  <p class="user_email"></p>
+                </div>
+              </a></li>
+            <li class="createProvider"><a href="https://developers.line.biz/console/register/provider/"> <span data-translate="translate_header_login_newProvider">Add new provider</span></a></li>
+            <li class="providerList"><a href="https://developers.line.biz/console/"> <span data-translate="translate_header_login_providerList">Provider List</span></a></li>
+            <li class="logoutBtn"> <a class="GlobalHeaderLogoutBtn"> <span data-translate="translate_header_login_logout">Log out</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+    </header>
+    <div class="Container">
+      <nav class="GlobalSideNav" style="height: 531px;"><div class="GlobalSideNavInner"><a class="GlobalSideNavInnerLogo" href="https://developers.line.biz/en/"><img src="./LINE Developers_files/logo-black.png" alt="line developer"></a>
+  <ul class="GlobalSideNavList">
+    <li class="GlobalSideNav-level1 Collapse" id="sidenav-services">
+      <h2 class="title Collapse_title" data-navlink="services"><span data-translate="translate_sidenav_menu_service">รูปแบบบริการ</span></h2>
+      <ul class="container Collapse_contents">
+        <li class="GlobalSideNav-level2"><a class="title" href="https://developers.line.biz/en/services/" data-translate="translate_sidenav_menu_top_products">รูปแบบบริการ</a></li>
+        <li class="GlobalSideNav-level2"><a class="title" href="https://developers.line.biz/en/services/line-login/" data-translate="translate_sidenav_menu_service_lineLogin">LINE Login</a></li>
+        <li class="GlobalSideNav-level2"><a class="title" href="https://developers.line.biz/en/services/messaging-api/" data-translate="translate_sidenav_menu_service_messagingApi">Messaging API</a></li>
+        <li class="GlobalSideNav-level2"><a class="title" href="https://developers.line.biz/en/services/bot-designer/" data-translate="translate_sidenav_menu_service_botDesigner">Bot Designer</a></li>
+        <li class="GlobalSideNav-level2"><a class="title" href="https://developers.line.biz/en/services/line-things/" data-translate="translate_sidenav_menu_service_lineThings">LINE Things</a></li>
+        <li class="GlobalSideNav-level2"><a class="title" href="https://clova-developers.line.biz/" target="_blank"><span class="Link-blank" data-translate="translate_sidenav_menu_service_clovaExtensionsKit">Clova Extensions Kit</span></a></li>
+        <li>
+          </li><li class="GlobalSideNav-level2"><a class="title" href="https://pay.line.me/jp/intro?locale=en_US" target="_blank"><span class="Link-blank" data-translate="translate_sidenav_menu_service_pay">LINE Pay</span></a></li>
+        </ul>
+      </li>
+      <li class="GlobalSideNav-level1 Collapse" id="sidenav-docs">
+        <h2 class="title Collapse_title" data-navlink="docs"><span data-translate="translate_sidenav_menu_documents">Documents</span></h2>
+        <ul class="container Collapse_contents">
+          <li class="GlobalSideNav-level2" id="sidenav-docs-0"><a class="title" href="https://developers.line.biz/en/docs/" data-translate="translate_sidenav_menu_top_documents">Document top</a></li>
+          <li class="GlobalSideNav-level2 Collapse" id="sidenav-docs-1">
+            <div class="title Collapse_title">
+              <a href="https://developers.line.biz/en/docs/line-login/" data-translate="translate_sidenav_menu_service_lineLogin">LINE Login</a>
+            </div>
+            <div class="container Collapse_contents">
+              <div class="GlobalSideNav-level3">
+                <div class="container top-link">
+                  <a href="https://developers.line.biz/en/docs/line-login/" data-translate="translate_sidenav_menu_top">Top</a>
+                </div>
+                <div class="title">
+                  <span>General</span>
+                </div>
+                <ul class="container">
+                  <li>
+                    <a href="https://developers.line.biz/en/docs/line-login/overview/">
+                      Overview
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://developers.line.biz/en/docs/line-login/getting-started/">
+                      Getting started
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://developers.line.biz/en/docs/line-login/managing-roles/">
+                      Managing roles
+                    </a>
+                  </li>
+                </ul>
+                <div class="title">
+                  <span>Web</span>
+                </div>
+                <ul class="container">
+                  <li>
+                    <a href="https://developers.line.biz/en/docs/line-login/web/try-line-login/">
+                      Trying LINE Login
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://developers.line.biz/en/docs/line-login/web/integrate-line-login/">
+                      Integrating LINE Login with your web app
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://developers.line.biz/en/docs/line-login/web/link-a-bot/">
+                      Linking a LINE official account with your LINE Login channel
+                    </a>
+                  </li>
+                </ul>
+                <div class="title">
+                  <span>Native apps</span>
+                </div>
+                <ul class="container">
+                  <li>
+                    <a href="https://developers.line.biz/en/docs/line-login/native/take-over-session/">
+                      Transfer session details to back-end server
+                    </a>
+                  </li>
+                </ul>
+                <div class="title">
+                  <span>Resources</span>
+                </div>
+                <ul class="container">
+                  <li>
+                    <a href="https://developers.line.biz/en/docs/line-login/login-button/">
+                      LINE Login button
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://developers.line.biz/en/docs/line-login/using-line-url-scheme/">
+                      Using the LINE URL scheme
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://developers.line.biz/en/docs/line-login/converting-mid-to-userid/">
+                      Converting an MID to a user ID
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://developers.line.biz/en/docs/line-login/release-notes/">
+                      Release notes
+                    </a>
+                  </li>
+                </ul>
+                <div class="title">
+                  <span>Previous versions</span>
+                </div>
+                <ul class="container">
+                  <li>
+                    <a href="https://developers.line.biz/en/docs/line-login/web/integrate-line-login-v2/">
+                      Integrating LINE Login v2 with your web app
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="GlobalSideNav-level2 Collapse" id="sidenav-docs-2">
+            <div class="title Collapse_title">
+              <a href="https://developers.line.biz/en/docs/ios-sdk/" data-translate="translate_sidenav_menu_service_iosSdk">LINE SDK for iOS</a>
+            </div>
+            <div class="container Collapse_contents">
+              <div class="GlobalSideNav-level3">
+                <div class="container top-link">
+                  <a href="https://developers.line.biz/en/docs/ios-sdk/" data-translate="translate_sidenav_menu_top">Top</a>
+                </div>
+                <div class="title">
+                  <span>LINE SDK v5.1 for iOS Swift</span>
+                </div>
+                <ul class="container">
+                  <li>
+                    <a href="https://developers.line.biz/en/docs/ios-sdk/swift/overview/">
+                      Overview
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://developers.line.biz/en/docs/ios-sdk/swift/try-line-login/">
+                      Trying the starter app
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://developers.line.biz/en/docs/ios-sdk/swift/setting-up-project/">
+                      Setting up your project
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://developers.line.biz/en/docs/ios-sdk/swift/integrate-line-login/">
+                      Integrating LINE Login
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://developers.line.biz/en/docs/ios-sdk/swift/link-a-bot/">
+                      Enabling the bot link feature with the SDK
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://developers.line.biz/en/docs/ios-sdk/swift/managing-users/">
+                      Managing users
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://developers.line.biz/en/docs/ios-sdk/swift/managing-access-tokens/">
+                      Managing access tokens
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://developers.line.biz/en/docs/ios-sdk/swift/error-handling/">
+                      Handling errors
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://developers.line.biz/en/docs/ios-sdk/swift/using-objc/">
+                      Using the SDK with Objective-C code
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://developers.line.biz/en/docs/ios-sdk/swift/migration-guide/">
+                      Upgrading the SDK
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://developers.line.biz/en/reference/ios-sdk-swift/">
+                      LINE SDK v5 for iOS Swift reference
+                    </a>
+                  </li>
+                </ul>
+                <div class="title">
+                  <span>LINE SDK v5.0 for iOS Objective-C</span>
+                </div>
+                <ul class="container">
+                  <li>
+                    <a href="https://developers.line.biz/en/docs/ios-sdk/objective-c/overview/">
+                      Overview
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://developers.line.biz/en/docs/ios-sdk/objective-c/try-line-login/">
+                      Trying the starter app
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://developers.line.biz/en/docs/ios-sdk/objective-c/setting-up-project/">
+                      Setting up your project
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://developers.line.biz/en/docs/ios-sdk/objective-c/integrate-line-login/">
+                      Integrating LINE Login
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://developers.line.biz/en/docs/ios-sdk/objective-c/link-a-bot/">
+                      Enabling the bot link feature with the SDK
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://developers.line.biz/en/docs/ios-sdk/objective-c/managing-users/">
+                      Managing users
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://developers.line.biz/en/docs/ios-sdk/objective-c/managing-access-tokens/">
+                      Managing access tokens
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://developers.line.biz/en/docs/ios-sdk/objective-c/error-handling/">
+                      Handling errors
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://developers.line.biz/en/reference/ios-sdk-objc/">
+                      LINE SDK v5.0 for iOS Objective-C reference
+                    </a>
+                  </li>
+                </ul>
+                <div class="title">
+                  <span>Resources</span>
+                </div>
+                <ul class="container">
+                  <li>
+                    <a href="https://developers.line.biz/en/docs/ios-sdk/release-notes/">
+                      Release notes
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://developers.line.biz/en/docs/downloads/#line-sdk-ios-swift">
+                      Downloads
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="GlobalSideNav-level2 Collapse" id="sidenav-docs-3">
+            <div class="title Collapse_title">
+              <a href="https://developers.line.biz/en/docs/android-sdk/" data-translate="translate_sidenav_menu_service_androidSdk">LINE SDK for Android</a>
+            </div>
+            <div class="container Collapse_contents">
+              <div class="GlobalSideNav-level3">
+                <div class="container top-link">
+                  <a href="https://developers.line.biz/en/docs/android-sdk/" data-translate="translate_sidenav_menu_top">Top</a>
+                </div>
+                <div class="title">
+                  <span>LINE SDK v5.0 for Android</span>
+                </div>
+                <ul class="container">
+                  <li>
+                    <a href="https://developers.line.biz/en/docs/android-sdk/overview/">
+                      Overview
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://developers.line.biz/en/docs/android-sdk/try-line-login/">
+                      Trying the starter app
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://developers.line.biz/en/docs/android-sdk/integrate-line-login/">
+                      Integrating LINE Login
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://developers.line.biz/en/docs/android-sdk/link-a-bot/">
+                      Enabling the bot link feature with the SDK
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://developers.line.biz/en/docs/android-sdk/managing-users/">
+                      Managing users
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://developers.line.biz/en/docs/android-sdk/managing-access-tokens/">
+                      Managing access tokens
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://developers.line.biz/en/docs/android-sdk/handling-errors/">
+                      Handling errors
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://developers.line.biz/en/reference/android-sdk/">
+                      LINE SDK v5.0 for Android reference
+                    </a>
+                  </li>
+                </ul>
+                <div class="title">
+                  <span>Resources</span>
+                </div>
+                <ul class="container">
+                  <li>
+                    <a href="https://developers.line.biz/en/docs/android-sdk/release-notes/">
+                      Release notes
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://developers.line.biz/en/docs/downloads/#line-sdk-android">
+                      Downloads
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="GlobalSideNav-level2 Collapse" id="sidenav-docs-4">
+            <div class="title Collapse_title">
+              <a href="https://developers.line.biz/en/docs/unity-sdk/" data-translate="translate_sidenav_menu_service_unitySdk">LINE SDK for Unity</a>
+            </div>
+            <div class="container Collapse_contents">
+              <div class="GlobalSideNav-level3">
+                <div class="container top-link">
+                  <a href="https://developers.line.biz/en/docs/unity-sdk/" data-translate="translate_sidenav_menu_top">Top</a>
+                </div>
+                <div class="title">
+                  <span>LINE SDK for Unity</span>
+                </div>
+                <ul class="container">
+                  <li>
+                    <a href="https://developers.line.biz/en/docs/unity-sdk/overview/">
+                      Overview
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://developers.line.biz/en/docs/unity-sdk/project-setup/">
+                      Setting up your project
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://developers.line.biz/en/docs/unity-sdk/try-line-login/">
+                      Trying the starter app
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://developers.line.biz/en/docs/unity-sdk/integrate-line-login/">
+                      Integrating LINE Login with your Unity game
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://developers.line.biz/en/docs/unity-sdk/using-sdk/">
+                      Using the SDK
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://developers.line.biz/en/reference/unity-sdk/">
+                      LINE SDK v5.0 for Unity reference
+                    </a>
+                  </li>
+                </ul>
+                <div class="title">
+                  <span>Resources</span>
+                </div>
+                <ul class="container">
+                  <li>
+                    <a href="https://developers.line.biz/en/docs/unity-sdk/release-notes/">
+                      Release notes
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://developers.line.biz/en/docs/downloads/#line-sdk-unity">
+                      Downloads
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="GlobalSideNav-level2" id="sidenav-docs-5">
+            <a class="title" href="https://developers.line.biz/en/docs/flutter-sdk/" data-translate="translate_sidenav_menu_service_flutterSdk">LINE SDK for Flutter</a>
+          </li>
+          <li class="GlobalSideNav-level2 Collapse" id="sidenav-docs-6">
+            <div class="title Collapse_title">
+              <a href="https://developers.line.biz/en/docs/social-api/" data-translate="translate_sidenav_menu_service_socialApi">Social API v2.1</a>
+            </div>
+            <div class="container Collapse_contents">
+              <div class="GlobalSideNav-level3">
+                <div class="container top-link">
+                  <a href="https://developers.line.biz/en/docs/social-api/" data-translate="translate_sidenav_menu_top">Top</a>
+                </div>
+                <div class="title">
+                  <span>Guides</span>
+                </div>
+                <ul class="container">
+                  <li>
+                    <a href="https://developers.line.biz/en/docs/social-api/overview/">
+                      Overview
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://developers.line.biz/en/docs/social-api/getting-user-profiles/">
+                      Getting user profiles
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://developers.line.biz/en/docs/social-api/logging-out-users/">
+                      Logging out users
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://developers.line.biz/en/docs/social-api/managing-access-tokens/">
+                      Managing access tokens
+                    </a>
+                  </li>
+                </ul>
+                <div class="title">
+                  <span>Reference</span>
+                </div>
+                <ul class="container">
+                  <li>
+                    <a href="https://developers.line.biz/en/reference/social-api/">
+                      Social API v2.1 reference
+                    </a>
+                  </li>
+                </ul>
+                <div class="title">
+                  <span>Previous versions</span>
+                </div>
+                <ul class="container">
+                  <li>
+                    <a href="https://developers.line.biz/en/docs/social-api/logging-out-users-v2/">
+                      Logging out users v2.0
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://developers.line.biz/en/docs/social-api/managing-access-tokens-v2/">
+                      Managing access tokens v2.0
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://developers.line.biz/en/reference/social-api-v2/">
+                      Social API v2.0 reference
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="GlobalSideNav-level2 Collapse" id="sidenav-docs-7">
+            <div class="title Collapse_title">
+              <a href="https://developers.line.biz/en/docs/messaging-api/" data-translate="translate_sidenav_menu_service_messagingApi">Messaging API</a>
+            </div>
+            <div class="container Collapse_contents">
+              <div class="GlobalSideNav-level3">
+                <div class="container top-link">
+                  <a href="https://developers.line.biz/en/docs/messaging-api/" data-translate="translate_sidenav_menu_top">Top</a>
+                </div>
+                <div class="title">
+                  <span>Quickstart</span>
+                </div>
+                <ul class="container">
+                  <li>
+                    <a href="https://developers.line.biz/en/docs/messaging-api/overview/">
+                      Overview
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://developers.line.biz/en/docs/messaging-api/getting-started/">
+                      Getting started
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://developers.line.biz/en/docs/messaging-api/managing-roles/">
+                      Managing roles
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://developers.line.biz/en/docs/messaging-api/building-sample-bot-with-heroku/">
+                      Building a sample bot
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://developers.line.biz/en/docs/messaging-api/building-bot/">
+                      Building a bot
+                    </a>
+                  </li>
+                </ul>
+                <div class="title">
+                  <span>Guides</span>
+                </div>
+                <ul class="container">
+                  <li>
+                    <a href="https://developers.line.biz/en/docs/messaging-api/using-quick-reply/">
+                      Using quick replies
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://developers.line.biz/en/docs/messaging-api/using-rich-menus/">
+                      Using rich menus
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://developers.line.biz/en/docs/messaging-api/using-flex-messages/">
+                      Using Flex Messages
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://developers.line.biz/en/docs/messaging-api/using-line-url-scheme/">
+                      Using the LINE URL scheme
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://developers.line.biz/en/docs/messaging-api/using-beacons/">
+                      Using beacons
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://developers.line.biz/en/docs/messaging-api/sharing-bot/">
+                      Sharing your LINE official account with users
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://developers.line.biz/en/docs/messaging-api/linking-accounts/">
+                      Linking user accounts
+                    </a>
+                  </li>
+                </ul>
+                <div class="title">
+                  <span>Concepts</span>
+                </div>
+                <ul class="container">
+                  <li>
+                    <a href="https://developers.line.biz/en/docs/messaging-api/message-types/">
+                      Messages
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://developers.line.biz/en/docs/messaging-api/actions/">
+                      Actions
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://developers.line.biz/en/docs/messaging-api/flex-message-elements/">
+                      Flex Message elements
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://developers.line.biz/en/docs/messaging-api/flex-message-layout/">
+                      Flex Message layout
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://developers.line.biz/en/docs/messaging-api/group-chats/">
+                      Group chats
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://developers.line.biz/en/docs/messaging-api/user-consent/">
+                      User consent
+                    </a>
+                  </li>
+                </ul>
+                <div class="title">
+                  <span>Reference</span>
+                </div>
+                <ul class="container">
+                  <li>
+                    <a href="https://developers.line.biz/en/reference/messaging-api/">
+                      Messaging API reference
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://developers.line.biz/en/docs/messaging-api/beacon-device-spec/">
+                      LINE Beacon device specification
+                    </a>
+                  </li>
+                </ul>
+                <div class="title">
+                  <span>Resources</span>
+                </div>
+                <ul class="container">
+                  <li>
+                    <a href="https://developers.line.biz/console/fx/">
+                      Flex Message Simulator
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://developers.line.biz/en/docs/messaging-api/line-bot-sdk/">
+                      Messaging API SDKs
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://developers.line.biz/en/docs/messaging-api/release-notes/">
+                      Release notes
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="GlobalSideNav-level2 Collapse" id="sidenav-docs-8">
+            <div class="title Collapse_title">
+              <a href="https://developers.line.biz/en/docs/liff/" data-translate="translate_sidenav_menu_service_liff">LINE Front-end Framework</a>
+            </div>
+            <div class="container Collapse_contents">
+              <div class="GlobalSideNav-level3">
+                <div class="container top-link">
+                  <a href="https://developers.line.biz/en/docs/liff/" data-translate="translate_sidenav_menu_top">Top</a>
+                </div>
+                <div class="title">
+                  <span>Quickstart</span>
+                </div>
+                <ul class="container">
+                  <li>
+                    <a href="https://developers.line.biz/en/docs/liff/overview/">
+                      Overview
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://developers.line.biz/en/docs/liff/getting-started/">
+                      Getting started
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://developers.line.biz/en/docs/liff/trying-liff-app/">
+                      Trying the sample LIFF app
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://developers.line.biz/en/docs/liff/developing-liff-apps/">
+                      Developing a LIFF app
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://developers.line.biz/en/docs/liff/registering-liff-apps/">
+                      Adding a LIFF app
+                    </a>
+                  </li>
+                </ul>
+                <div class="title">
+                  <span>Reference</span>
+                </div>
+                <ul class="container">
+                  <li>
+                    <a href="https://developers.line.biz/en/reference/liff/">
+                      LIFF API reference
+                    </a>
+                  </li>
+                </ul>
+                <div class="title">
+                  <span>Resources</span>
+                </div>
+                <ul class="container">
+                  <li>
+                    <a href="https://developers.line.biz/en/docs/liff/release-notes/">
+                      Release notes
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="GlobalSideNav-level2 Collapse" id="sidenav-docs-9">
+            <div class="title Collapse_title">
+              <a href="https://developers.line.biz/en/docs/line-things/" data-translate="translate_sidenav_menu_service_lineThings">LINE Things</a>
+            </div>
+            <div class="container Collapse_contents">
+              <div class="GlobalSideNav-level3">
+                <div class="container top-link">
+                  <a href="https://developers.line.biz/en/docs/line-things/" data-translate="translate_sidenav_menu_top">Top</a>
+                </div>
+                <div class="title">
+                  <span>About LINE Things</span>
+                </div>
+                <ul class="container">
+                  <li>
+                    <a href="https://developers.line.biz/en/docs/line-things/about-line-things/">
+                      About LINE Things
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://developers.line.biz/en/docs/line-things/about-line-things-trial/">
+                      About LINE Things Developer Trial
+                    </a>
+                  </li>
+                </ul>
+                <div class="title">
+                  <span>Using LINE Things</span>
+                </div>
+                <ul class="container">
+                  <li>
+                    <a href="https://developers.line.biz/en/docs/line-things/getting-started/">
+                      High-level workflow
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://developers.line.biz/en/docs/line-things/create-starter-liff-app/">
+                      Deploying the starter LIFF app for LINE Things
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://developers.line.biz/en/docs/line-things/create-devices/">
+                      Configuring devices
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://developers.line.biz/en/docs/line-things/develop-liff-app/">
+                      Finalizing the LIFF app
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://developers.line.biz/en/docs/line-things/try-line-things/">
+                      Trying LINE Things
+                    </a>
+                  </li>
+                </ul>
+                <div class="title">
+                  <span>Setting up automatic communication</span>
+                </div>
+                <ul class="container">
+                  <li>
+                    <a href="https://developers.line.biz/en/docs/line-things/about-auto-communication/">
+                      About automatic communication
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://developers.line.biz/en/docs/line-things/prepare-auto-communication/">
+                      Prepare to use automatic communication
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://developers.line.biz/en/docs/line-things/receive-scenario-result-event/">
+                      Receiving LINE Things scenario execution events
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://developers.line.biz/en/docs/line-things/notes-on-using-auto-communication/">
+                      Important notes related to using automatic communication
+                    </a>
+                  </li>
+                </ul>
+                <div class="title">
+                  <span>Other resources</span>
+                </div>
+                <ul class="container">
+                  <li>
+                    <a href="https://developers.line.biz/en/reference/liff/">
+                      LIFF API reference
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://developers.line.biz/en/reference/line-things/">
+                      LINE Things API reference
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="GlobalSideNav-level2" id="sidenav-docs-10">
+            <a class="title" href="https://developers.line.biz/en/docs/clova-extensions-kit/" data-translate="translate_sidenav_menu_service_clovaExtensionsKit">Clova Extensions Kit</a>
+          </li>
+          <li class="GlobalSideNav-level2" id="sidenav-docs-11">
+            <a class="title" href="https://social-plugins.line.me/" target="_blank"><span class="Link-blank" data-translate="translate_sidenav_menu_lineSocialPlugins">LINE Social Plugins</span></a>
+          </li>
+          <li class="GlobalSideNav-level2" id="sidenav-docs-12">
+            <a class="title" href="https://notify-bot.line.me/" target="_blank"><span class="Link-blank" data-translate="translate_sidenav_menu_lineNotify">LINE Notify</span></a>
+          </li>
+          <li class="GlobalSideNav-level2" id="sidenav-docs-13">
+            <a class="title" href="https://pay.line.me/jp/developers/main/main?locale=en_US" target="_blank">
+              <span class="Link-blank" data-translate="translate_sidenav_menu_linePay">LINE Pay</span></a>
+          </li>
+          <li class="GlobalSideNav-level2"><a class="title" href="https://developers.line.biz/en/docs/glossary/" data-translate="translate_sidenav_menu_glossary">Glossary</a></li>
+        </ul>
+      </li>
+      <li class="GlobalSideNav-level1 Collapse" id="sidenav-reference">
+        <h2 class="title Collapse_title" data-navlink="reference"><span data-translate="translate_sidenav_menu_ApiReference">API reference</span></h2>
+        <ul class="container Collapse_contents">
+          <li class="GlobalSideNav-level2" id="sidenav-reference-0">
+            <div class="title">
+              <a href="https://developers.line.biz/en/reference/" data-translate="translate_sidenav_menu_top_reference">API reference top</a>
+            </div>
+          </li>
+          <li class="GlobalSideNav-level2" id="sidenav-reference-1"><a class="title" href="https://developers.line.biz/en/reference/ios-sdk-swift/" data-translate="translate_sidenav_menu_service_iosSdkSwift">LINE SDK for iOS Swift</a>
+            </li><li class="GlobalSideNav-level2" id="sidenav-reference-2"><a class="title" href="https://developers.line.biz/en/reference/ios-sdk-objc/" data-translate="translate_sidenav_menu_service_iosSdkObjc">LINE SDK for iOS Objective-C</a>
+              </li><li class="GlobalSideNav-level2" id="sidenav-reference-3"><a class="title" href="https://developers.line.biz/en/reference/android-sdk/" data-translate="translate_sidenav_menu_service_androidSdk">LINE SDK for Android</a>
+                </li><li class="GlobalSideNav-level2" id="sidenav-reference-4"><a class="title" href="https://developers.line.biz/en/reference/unity-sdk/" data-translate="translate_sidenav_menu_service_unitySdk">LINE SDK for Unity</a>
+                  </li><li class="GlobalSideNav-level2" id="sidenav-reference-5">
+                    <a class="title" href="https://pub.dev/documentation/flutter_line_sdk/latest/flutter_line_sdk/flutter_line_sdk-library.html" target="_blank"><span class="Link-blank" data-translate="translate_sidenav_menu_service_flutterSdk">LINE SDK for Flutter</span></a>
+                  </li>
+                  <li class="GlobalSideNav-level2 Collapse" id="sidenav-reference-6">
+                    <div class="title Collapse_title"><a href="https://developers.line.biz/en/reference/social-api/" data-translate="translate_sidenav_menu_service_socialApi">Social API v2.1</a></div>
+                    <div class="container Collapse_contents">
+                      <div class="GlobalSideNav-level3">
+                        <div class="container top-link"><a href="https://developers.line.biz/en/reference/social-api/" data-translate="translate_sidenav_menu_top">Top</a></div>
+                        <div class="title">
+                          <span>OAuth</span>
+                        </div>
+                        <ul class="container">
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/social-api/#issue-access-token">Issue access token</a>
+                          </li>
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/social-api/#verify-access-token">Verify access token</a>
+                          </li>
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/social-api/#refresh-access-token">Refresh access token</a>
+                          </li>
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/social-api/#revoke-access-token">Revoke access token</a>
+                          </li>
+                        </ul>
+                        <div class="title">
+                          <span>Profile</span>
+                        </div>
+                        <ul class="container">
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/social-api/#get-user-profile">Get user profile</a>
+                          </li>
+                        </ul>
+                        <div class="title">
+                          <span>Friendship</span>
+                        </div>
+                        <ul class="container">
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/social-api/#get-friendship-status">Get friendship status</a>
+                          </li>
+                        </ul>
+                        <div class="title">
+                          <span>Errors</span>
+                        </div>
+                        <ul class="container">
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/social-api/#status-codes">Status codes</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="GlobalSideNav-level2 Collapse" id="sidenav-reference-7">
+                    <div class="title Collapse_title"><a href="https://developers.line.biz/en/reference/social-api-v2/" data-translate="translate_sidenav_menu_service_socialApiV2">Social API v2.0</a></div>
+                    <div class="container Collapse_contents">
+                      <div class="GlobalSideNav-level3">
+                        <div class="container top-link"><a href="https://developers.line.biz/en/reference/social-api-v2/" data-translate="translate_sidenav_menu_top">Top</a></div>
+                        <div class="title">
+                          <span>OAuth</span>
+                        </div>
+                        <ul class="container">
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/social-api-v2/#verify-access-token">Verify access token</a>
+                          </li>
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/social-api-v2/#refresh-access-token">Refresh access token</a>
+                          </li>
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/social-api-v2/#revoke-access-token">Revoke access token</a>
+                          </li>
+                        </ul>
+                        <div class="title">
+                          <span>Profile</span>
+                        </div>
+                        <ul class="container">
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/social-api-v2/#get-user-profile">Get user profile</a>
+                          </li>
+                        </ul>
+                        <div class="title">
+                          <span>Errors</span>
+                        </div>
+                        <ul class="container">
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/social-api-v2/#status-codes">Status codes</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="GlobalSideNav-level2 Collapse" id="sidenav-reference-8">
+                    <div class="title Collapse_title"><a href="https://developers.line.biz/en/reference/messaging-api/" data-translate="translate_sidenav_menu_service_messagingApi">Messaging API</a></div>
+                    <div class="container Collapse_contents">
+                      <div class="GlobalSideNav-level3">
+                        <div class="container top-link"><a href="https://developers.line.biz/en/reference/messaging-api/" data-translate="translate_sidenav_menu_top">Top</a></div>
+                        <div class="title">
+                          <span>Common specifications</span>
+                        </div>
+                        <ul class="container">
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/messaging-api/#rate-limits">Rate limits</a>
+                          </li>
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/messaging-api/#status-codes">Status codes</a>
+                          </li>
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/messaging-api/#response-headers">Response headers</a>
+                          </li>
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/messaging-api/#error-responses">Error responses</a>
+                          </li>
+                        </ul>
+                        <div class="title">
+                          <span>Webhooks</span>
+                        </div>
+                        <ul class="container">
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/messaging-api/#request-headers">Request headers</a>
+                          </li>
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/messaging-api/#request-body">Request body</a>
+                          </li>
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/messaging-api/#response">Response</a>
+                          </li>
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/messaging-api/#signature-validation">Signature validation</a>
+                          </li>
+                        </ul>
+                        <div class="title">
+                          <span>Webhook event objects</span>
+                        </div>
+                        <ul class="container">
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/messaging-api/#common-properties">Common properties</a>
+                          </li>
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/messaging-api/#message-event">Message event</a>
+                          </li>
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/messaging-api/#follow-event">Follow event</a>
+                          </li>
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/messaging-api/#unfollow-event">Unfollow event</a>
+                          </li>
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/messaging-api/#join-event">Join event</a>
+                          </li>
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/messaging-api/#leave-event">Leave event</a>
+                          </li>
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/messaging-api/#member-joined-event">Member join event</a>
+                          </li>
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/messaging-api/#member-left-event">Member leave event</a>
+                          </li>
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/messaging-api/#postback-event">Postback event</a>
+                          </li>
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/messaging-api/#beacon-event">Beacon event</a>
+                          </li>
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/messaging-api/#account-link-event">Account link event</a>
+                          </li>
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/messaging-api/#device-link-event">Device link event</a>
+                          </li>
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/messaging-api/#device-unlink-event">Device unlink event</a>
+                          </li>
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/messaging-api/#scenario-result-event">LINE Things scenario execution event</a>
+                          </li>
+                        </ul>
+                        <div class="title">
+                          <span>OAuth</span>
+                        </div>
+                        <ul class="container">
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/messaging-api/#issue-channel-access-token">Issue channel access token</a>
+                          </li>
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/messaging-api/#revoke-channel-access-token">Revoke channel access token</a>
+                          </li>
+                        </ul>
+                        <div class="title">
+                          <span>Message</span>
+                        </div>
+                        <ul class="container">
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/messaging-api/#send-reply-message">Send reply message</a>
+                          </li>
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/messaging-api/#send-push-message">Send push message</a>
+                          </li>
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/messaging-api/#send-multicast-message">Send multicast message</a>
+                          </li>
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/messaging-api/#send-broadcast-message">Send broadcast message</a>
+                          </li>
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/messaging-api/#get-content">Get content</a>
+                          </li>
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/messaging-api/#get-quota">Get the target limit for additional messages</a>
+                          </li>
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/messaging-api/#get-consumption">Get number of messages sent this month</a>
+                          </li>
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/messaging-api/#get-number-of-reply-messages">Get number of sent reply messages</a>
+                          </li>
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/messaging-api/#get-number-of-push-messages">Get number of sent push messages</a>
+                          </li>
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/messaging-api/#get-number-of-multicast-messages">Get number of sent multicast messages</a>
+                          </li>
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/messaging-api/#get-number-of-broadcast-messages">Get number of sent broadcast messages</a>
+                          </li>
+                        </ul>
+                        <div class="title">
+                          <span>Insight</span>
+                        </div>
+                        <ul class="container">
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/messaging-api/#get-number-of-delivery-messages">Get number of message deliveries</a>
+                          </li>
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/messaging-api/#get-number-of-followers">Get number of followers</a>
+                          </li>
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/messaging-api/#get-demographic">Get friend demographics</a>
+                          </li>
+                        </ul>
+                        <div class="title">
+                          <span>Profile</span>
+                        </div>
+                        <ul class="container">
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/messaging-api/#get-profile">Get profile</a>
+                          </li>
+                        </ul>
+                        <div class="title">
+                          <span>Group</span>
+                        </div>
+                        <ul class="container">
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/messaging-api/#get-group-member-user-ids">Get group member user IDs</a>
+                          </li>
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/messaging-api/#get-group-member-profile">Get group member profile</a>
+                          </li>
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/messaging-api/#leave-group">Leave group</a>
+                          </li>
+                        </ul>
+                        <div class="title">
+                          <span>Room</span>
+                        </div>
+                        <ul class="container">
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/messaging-api/#get-room-member-user-ids">Get room member user IDs</a>
+                          </li>
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/messaging-api/#get-room-member-profile">Get room member profile</a>
+                          </li>
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/messaging-api/#leave-room">Leave room</a>
+                          </li>
+                        </ul>
+                        <div class="title">
+                          <span>Rich menu</span>
+                        </div>
+                        <ul class="container">
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/messaging-api/#create-rich-menu">Create rich menu</a>
+                          </li>
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/messaging-api/#upload-rich-menu-image">Upload rich menu image</a>
+                          </li>
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/messaging-api/#download-rich-menu-image">Download rich menu image</a>
+                          </li>
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/messaging-api/#get-rich-menu-list">Get rich menu list</a>
+                          </li>
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/messaging-api/#get-rich-menu">Get rich menu</a>
+                          </li>
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/messaging-api/#delete-rich-menu">Delete rich menu</a>
+                          </li>
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/messaging-api/#set-default-rich-menu">Set default rich menu</a>
+                          </li>
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/messaging-api/#get-default-rich-menu-id">Get default rich menu ID</a>
+                          </li>
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/messaging-api/#cancel-default-rich-menu">Cancel default rich menu</a>
+                          </li>
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/messaging-api/#link-rich-menu-to-user">Link rich menu to user</a>
+                          </li>
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/messaging-api/#link-rich-menu-to-users">Link rich menu to multiple users</a>
+                          </li>
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/messaging-api/#get-rich-menu-id-of-user">Get rich menu ID of user</a>
+                          </li>
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/messaging-api/#unlink-rich-menu-from-user">Unlink rich menu from user</a>
+                          </li>
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/messaging-api/#unlink-rich-menu-from-users">Unlink rich menus from multiple users</a>
+                          </li>
+                        </ul>
+                        <div class="title">
+                          <span>Account link</span>
+                        </div>
+                        <ul class="container">
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/messaging-api/#issue-link-token">Issue link token</a>
+                          </li>
+                        </ul>
+                        <div class="title">
+                          <span>Message objects</span>
+                        </div>
+                        <ul class="container">
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/messaging-api/#message-common-properties">Common properties for messages</a>
+                          </li>
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/messaging-api/#text-message">Text message</a>
+                          </li>
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/messaging-api/#sticker-message">Sticker message</a>
+                          </li>
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/messaging-api/#image-message">Image message</a>
+                          </li>
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/messaging-api/#video-message">Video message</a>
+                          </li>
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/messaging-api/#audio-message">Audio message</a>
+                          </li>
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/messaging-api/#location-message">Location message</a>
+                          </li>
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/messaging-api/#imagemap-message">Imagemap message</a>
+                          </li>
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/messaging-api/#template-messages">Template messages</a>
+                          </li>
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/messaging-api/#flex-message">Flex Message</a>
+                          </li>
+                        </ul>
+                        <div class="title">
+                          <span>Action objects</span>
+                        </div>
+                        <ul class="container">
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/messaging-api/#postback-action">Postback action</a>
+                          </li>
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/messaging-api/#message-action">Message action</a>
+                          </li>
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/messaging-api/#uri-action">URI action</a>
+                          </li>
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/messaging-api/#datetime-picker-action">Datetime picker action</a>
+                          </li>
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/messaging-api/#camera-action">Camera action</a>
+                          </li>
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/messaging-api/#camera-roll-action">Camera roll action</a>
+                          </li>
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/messaging-api/#location-action">Location action</a>
+                          </li>
+                        </ul>
+                        <div class="title">
+                          <span>Rich menu structure</span>
+                        </div>
+                        <ul class="container">
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/messaging-api/#rich-menu-object">Rich menu object</a>
+                          </li>
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/messaging-api/#rich-menu-response-object">Rich menu response object</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="GlobalSideNav-level2 Collapse" id="sidenav-reference-9">
+                    <div class="title Collapse_title"><a href="https://developers.line.biz/en/reference/liff/" data-translate="translate_sidenav_menu_service_liff">LINE Front-end Framework</a></div>
+                    <div class="container Collapse_contents">
+                      <div class="GlobalSideNav-level3">
+                        <div class="container top-link"><a href="https://developers.line.biz/en/reference/liff/" data-translate="translate_sidenav_menu_top">Top</a></div>
+                        <div class="title">
+                          <span>Client API</span>
+                        </div>
+                        <ul class="container">
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/liff/#liff-errors">LIFF SDK errors</a>
+                          </li>
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/liff/#initialize-liff-app">liff.init()</a>
+                          </li>
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/liff/#open-window">liff.openWindow()</a>
+                          </li>
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/liff/#get-access-token">liff.getAccessToken()</a>
+                          </li>
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/liff/#get-profile">liff.getProfile()</a>
+                          </li>
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/liff/#send-messages">liff.sendMessages()</a>
+                          </li>
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/liff/#close-window">liff.closeWindow()</a>
+                          </li>
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/liff/#liff-initplugins">liff.initPlugins()</a>
+                          </li>
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/liff/#liff-bluetooth-getavailability">liff.bluetooth.getAvailability()</a>
+                          </li>
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/liff/#liff-bluetooth-requestdevice">liff.bluetooth.requestDevice()</a>
+                          </li>
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/liff/#events">Events</a>
+                          </li>
+                        </ul>
+                        <div class="title">
+                          <span>Server API</span>
+                        </div>
+                        <ul class="container">
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/liff/#add-liff-app">Adding the LIFF app</a>
+                          </li>
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/liff/#update-liff-app">Update LIFF app</a>
+                          </li>
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/liff/#get-all-liff-apps">Get all LIFF apps</a>
+                          </li>
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/liff/#delete-liff-app">Delete LIFF app</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="GlobalSideNav-level2 Collapse" id="sidenav-reference-10">
+                    <div class="title Collapse_title"><a href="https://developers.line.biz/en/reference/line-things/" data-translate="translate_sidenav_menu_service_lineThings">LINE Things</a></div>
+                    <div class="container Collapse_contents">
+                      <div class="GlobalSideNav-level3">
+                        <div class="container top-link"><a href="https://developers.line.biz/en/reference/line-things/" data-translate="translate_sidenav_menu_top">Top</a></div>
+                        <div class="title">
+                          <span>LINE Things API</span>
+                        </div>
+                        <ul class="container">
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/line-things/#get-product-id-and-psdi">Specifying product ID to acquire PSDI by device ID</a>
+                          </li>
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/line-things/#get-device-by-product-id-and-user-id">Acquiring device information by specifying product ID and user ID</a>
+                          </li>
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/line-things/#post-trial-products">Creating trial product information</a>
+                          </li>
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/line-things/#get-trial-products">Acquiring trial product information</a>
+                          </li>
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/line-things/#delete-trial-product">Deleting the trial product information</a>
+                          </li>
+                        </ul>
+                        <div class="title">
+                          <span>Scenario management API for automatic communication</span>
+                        </div>
+                        <ul class="container">
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/line-things/#create-scenario-set">Create or update a scenario set</a>
+                          </li>
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/line-things/#find-scenario-set">Get a scenario set</a>
+                          </li>
+                          <li>
+                            <a href="https://developers.line.biz/en/reference/line-things/#delete-scenario-set">Delete a scenario set</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="GlobalSideNav-level2" id="sidenav-reference-11">
+                    <a class="title" href="https://social-plugins.line.me/" target="_blank"><span class="Link-blank" data-translate="translate_sidenav_menu_lineSocialPlugins">LINE Social Plugins</span></a>
+                  </li>
+                  <li class="GlobalSideNav-level2" id="sidenav-reference-12">
+                    <a class="title" href="https://notify-bot.line.me/" target="_blank"><span class="Link-blank" data-translate="translate_sidenav_menu_lineNotify">LINE Notify</span></a>
+                  </li>
+                  <li class="GlobalSideNav-level2" id="sidenav-reference-13">
+                    <a class="title" href="https://pay.line.me/jp/developers/main/main?locale=en_US" target="_blank"><span class="Link-blank" data-translate="translate_sidenav_menu_linePay">LINE Pay</span></a>
+                  </li>
+                </ul>
+              </li>
+              <li class="GlobalSideNav-level1">
+                <div class="title" data-navlink="news"><a href="https://developers.line.biz/en/news/" data-translate="translate_sidenav_menu_news">News</a></div>
+              </li>
+              <li class="GlobalSideNav-level1">
+                <div class="title" data-navlink="faq"><a href="https://developers.line.biz/en/faq/" data-translate="translate_sidenav_menu_faq">FAQ</a></div>
+              </li>
+              <li class="GlobalSideNav-level1">
+                <div class="title"><a href="https://www.line-community.me/" target="_blank"><span class="Link-blank" data-translate="translate_sidenav_menu_community">Community</span></a></div>
+              </li>
+              <li class="GlobalSideNav-level1">
+                <div class="title"><a href="https://engineering.linecorp.com/en/blog" target="_blank"><span class="Link-blank" data-translate="translate_sidenav_menu_blog">Blog</span></a></div>
+              </li>
+            </ul>
+          </div>
+</nav>
+      <div class="Body">
+        <main>
+          <article>
+            <section>
+              <div class="TopMainVisual">
+                <div class="TopMainVisual_bg">
+                  <div class="TopMainVisual_bgInner" style="background-image: url(&quot;bg.png&quot;);">
+                    <div class="LoadingIndicator"></div>
+                  </div>
+                </div>
+                <div class="TopMainVisual_texts">
+                  <div class="TopMainVisual_textsInner">
+                    <h2>เชื่อมต่อ LINE Chatbot กับ Dialogflow<span class="TopTextCursor"></span></h2>
+                  </div>
+                </div>
+                <div class="TopMainVisual_buttons"><a class="Button-hoverMoveUp Button-login js-logout" href="https://line.me/ti/p/@brandingchamp" hidden="">
+                    <div class="inner Button-white"> <span>สอบถาม</span></div>
+                  </a><a class="Button-hoverMoveUp" href="https://line.me/ti/p/@kxj8822f">
+                    <div class="inner">
+                      <spans>ทดสอบคุยกับ LINE Chatbot</spans>
+                    </div>
+                  </a></div>
+              </div>
+              <div class="TopContents TopContents-products">
+                <div class="TopConetents_Title">
+                  <h2 class="title">รูปแบบบริการ</h2>
+                </div>
+                <ul class="List_Product List_Product-top">
+                  <li class="List_Product_item" id="Product-LineLogin">
+                    <a class="List_Product_itemInner" href=".">
+                      <h3 class="title">
+                        <span>
+                          LINE Login
+                        </span>
+                      </h3>
+                      <div class="description">เพิ่มพลังการเข้าถึงให้กับบริการของคุณด้วย LINE Login.</div>
+                    </a>
+                  </li>
+                  <li class="List_Product_item" id="Product-MessagingApi">
+                    <a class="List_Product_itemInner" href=".">
+                      <h3 class="title">
+                        <span>
+                          Messaging API
+                        </span>
+                      </h3>
+                      <div class="description">เชื่อมลูกค้าทั่วโลก ง่ายๆ ด้วย Messaging API</div>
+                    </a>
+                  </li>
+                  <li class="List_Product_item" id="Product-LineBotDesigner">
+                    <a class="List_Product_itemInner" href=".">
+                      <h3 class="title">
+                        <span>
+                          LINE Bot Designer
+                        </span>
+                      </h3>
+                      <div class="description">ออกแบบ Chatbot โปรโตไทป์ ได้ สะดวก รวดเร็ว และ ง่าย</div>
+                    </a>
+                  </li>
+                  <li class="List_Product_item" id="Product-Clova">
+                    <a class="List_Product_itemInner" href="." target="_blank">
+                      <h3 class="title">
+                        <span>
+                          Dialogflow
+                        </span>
+                      </h3>
+                      <div class="description">ผนวกความสามารถของบริการกับ Dialogflow ของ Google</div>
+                    </a>
+                  </li>
+                  <li class="List_Product_item" id="Product-LinePay">
+                    <a class="List_Product_itemInner" href="." target="_blank">
+                      <h3 class="title">
+                        <span>
+                          LINE Pay
+                        </span>
+                      </h3>
+                      <div class="description">ต่อกับระบบ LINE Pay payment ให้กับธุรกิจของคุณ</div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="TopContents TopContents-news">
+                <!--div class="TopConetents_Title">
+                  <h2 class="title">News</h2>
+                </div>
+                <ul class="List_News">
+                  <li class="List_News_item newIcon">
+                    <div class="List_News_item_header"><span class="news-date">2019/07/26</span></div>
+                    <div class="List_News_item_body"><a href="https://developers.line.biz/en/news/#member-users-were-able-to-retrieve-channel-secret-because-of-a-bug-resolved-2019-07-26" class="news-link">Member users were able to retrieve Channel secret because of a bug (resolved)</a></div>
+                    <div class="List_News_item_footer"><a class="Tag round" href="https://developers.line.biz/en/news/tags/outage-report/">Outage report</a></div>
+                    </li><li class="List_News_item newIcon">
+                      <div class="List_News_item_header"><span class="news-date">2019/07/18</span></div>
+                      <div class="List_News_item_body"><a href="https://developers.line.biz/en/news/#notice-about-service-outage-for-line-login-resolved-2019-07-18" class="news-link">Notice about service outage for LINE Login (resolved)</a></div>
+                      <div class="List_News_item_footer"><a class="Tag round" href="https://developers.line.biz/en/news/tags/outage-report/">Outage report</a></div>
+                      </li><li class="List_News_item">
+                        <div class="List_News_item_header"><span class="news-date">2019/07/08</span></div>
+                        <div class="List_News_item_body"><a href="https://developers.line.biz/en/news/#new-messaging-api-endpoints-for-friend-statistics-2019-07-08" class="news-link">New Messaging API endpoints for friend statistics</a></div>
+                        <div class="List_News_item_footer"><a class="Tag round" href="https://developers.line.biz/en/news/tags/messaging-api/">Messaging API</a></div>
+                      </li></ul-->
+                      <!-- MORE NEWS LINK -->
+                      <!--div class="news-more_block">
+                        <a class="news-more_link" href="https://developers.line.biz/en/news/">
+                          <span>View all</span>
+                          <i class="global-icon global-icon_arrow_gt">arrow_gt</i>
+                        </a>
+                      </div>
+                    </div-->
+                    <div class="TopContents TopContents-tags">
+                      <div class="TagsList">
+                        <h2 class="title">Popular tags</h2>
+                        <ul class="Tags">
+                          <li><a href="." class="Tag">Outage report</a></li>
+                          <li><a href="." class="Tag">Console</a></li>
+                          <li><a href="." class="Tag">LINE Login</a></li>
+                          <li><a href="." class="Tag">Messaging API</a></li>
+                          <li><a href="." class="Tag">Flutter</a></li>
+                          <li><a href="." class="Tag">LINE Things</a></li>
+                          <li><a href="." class="Tag">LIFF</a></li>
+                          <li><a href="." class="Tag">LINE Platform</a></li>
+                          <li><a href="." class="Tag">Rich menu</a></li>
+                          <li><a href="." class="Tag">Docs</a></li>
+                          <li><a href="." class="Tag">iOS</a></li>
+                          <li><a href="." class="Tag">Maintenance</a></li>
+                          <li><a href="." class="Tag">Social API</a></li>
+                          <li><a href="." class="Tag">Unity</a></li>
+                          <li><a href="." class="Tag">Android</a></li>
+                          <li><a href="." class="Tag">Flex Message</a></li>
+                          <li><a href="." class="Tag">Clova Extensions Kit</a></li>
+                          <li><a href="." class="Tag">Dialogflow</a></li>
+                          <li><a href="." class="Tag">Bot Designer</a></li>
+                          <li><a href="." class="Tag">Imagemap message</a></li>
+                          <li><a href="." class="Tag">Template messages</a></li>
+                          <li><a href="." class="Tag">LINE API Expert</a></li>
+                          <li><a href="." class="Tag">Group</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <!--div class="TopContentsMidLoginAd js-logout">
+                      <div class="TopContentsMidLoginAdInner">
+                        <p> <span class="loggingout"> Log in with your LINE account now!</span><span class="logging">Join the LINE Developers Community!</span></p>
+                        <div class="loggingout"><a class="Button-hoverMoveUp" href="https://developers.line.biz/console/">
+                            <div class="inner Button-white"> <span>Log in</span></div>
+                          </a></div>
+                        <div class="logging">  <a class="Button-hoverMoveUp" href="https://www.line-community.me/" target="_blank">
+                            <div class="inner Button-white Button-blank"><span>Join now!</span></div>
+                          </a></div>
+                      </div>
+                    </div>
+                  </section>
+                  <div class="FooterPopup FooterPopup-qr"><a class="FooterPopup_closeButton" href="javascript:void(0);"></a>
+                    <div class="FooterPopup_inner">
+                      <div class="title">LINE Developers' official account</div>
+                      <div class="body">
+                        <div class="Show-PC">
+                          <div class="TouchPoint-text">Subscribe for the latest <br>
+                            information on the LINE Platform</div>
+                          <img class="TouchPoint" src="./LINE Developers_files/qr.png" alt="QR code">
+                        </div>
+                        <div class="Show-SP">
+                          <div class="TouchPoint-text">Subscribe for the latest <br>
+                            information on the LINE Platform</div>
+                          <a class="TouchPoint" href="https://line.me/R/ti/p/%40linedevelopers"><img alt="Add friend" src="./LINE Developers_files/en.png"></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </main>
+            </div>
+          </div-->
+          <footer>
+		  <center><div class="GlobalFooterCopyright"><p class="GlobalFooterCopyrightEn nowrap">บริหารงาน โดย <a href='https://www.brandingchamp.com/' alt='' title='' desc='' rel='dofollow' target='_blank'>ที่ปรึกษาการตลาดออนไลน์</a></p></div></center>
+            <!--div class="GlobalFooterWrapper"><div class="GlobalFooter">
+  <div class="GlobalFooterInner">
+    <div class="GlobalFooterCopyright">
+      <p class="GlobalFooterCopyrightEn nowrap">LINE Corporation </p>
+    </div>
+    <div class="GlobalFooterUtil TopFooter">
+      <ul class="GlobalFooterLinks">
+        <li class="GlobalFooterLink"><a class="nowrap" href="https://developers.line.biz/en/terms-and-policies/" data-translate="translate_footer_menu_policy">Terms and Policies</a></li>
+        <li class="GlobalFooterLink"><a class="nowrap" href="https://developers.line.biz/en/trademark/" data-translate="translate_footer_trade_mark">About trademarks</a>
+        </li>
+        <li class="GlobalFooterLink"><a class="Link-blank nowrap" href="https://line.me/" target="_blank">LINE</a></li>
+        <li class="GlobalFooterLink"><a class="Link-blank nowrap" href="https://linecorp.com/" target="_blank">LINE Corp</a></li>
+        <li class="GlobalFooterLink"><a class="Link-blank nowrap" href="https://www.linebiz.com/" target="_blank">LINE for Business</a></li>
+      </ul>
+    </div>
+    <div class="GlobalFooterUtil">
+      <ul class="GlobalFooterLinks ConsoleFooter" style="display: none;">
+        <li class="GlobalFooterLink"><a class="nowrap" href="https://developers.line.biz/en/terms-and-policies/" data-translate="translate_footer_menu_policy">Terms and Policies</a>
+        </li>
+        <li class="GlobalFooterLink"><a class="nowrap" href="https://developers.line.biz/en/trademark/" data-translate="translate_footer_trade_mark">About trademarks</a>
+        </li>
+        <li class="GlobalFooterLink FormLink"><span class="nowrap" data-translate="translate_footer_form_link1">Please use the </span>
+<a class="nowrap" href="https://contact-cc.line.me/serviceId/11556" target="_blank"><span class="nowrap" data-translate="translate_footer_form_link2">inquiry form</span>
+</a><span class="nowrap" data-translate="translate_footer_form_link3"> for problems occurring on the LINE platform.</span>
+        </li>
+      </ul>
+    </div>
+    <div class="GlobalFooterSelects">
+      <div class="GlobalFooterFamily">
+        <div class="Select Select-small GlobalFooterFamilySelect ConsoleFooter" style="display: none;">
+          <select class="Select_inner js-footer-family">
+            <option>Family Sites</option>
+            <option value="https://line.me/">LINE</option>
+            <option value="https://linecorp.com/">LINE Corp</option>
+            <option value="https://www.linebiz.com/">LINE for Business</option>
+          </select>
+        </div>
+      </div>
+      <!--div class="GlobalFooterLanguage">
+        <div class="Select Select-small GlobalFooterLanguageSelect">
+          <select class="Select_inner js-footer-language">
+            <option value="ja">日本語</option>
+            <option value="en">English</option>
+          </select>
+        </div>
+      </div-->
+    </div>
+  </div>
+</div>
+</div>
+          </footer>
+          <script src="./LINE Developers_files/lib.js.ดาวน์โหลด"></script>
+          <script src="./LINE Developers_files/local.js.ดาวน์โหลด"></script>
+</body></html>
